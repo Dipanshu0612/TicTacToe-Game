@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe :- The Game</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/968172cca8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h2 class="heading">TIC TAC TOE</h2>
+
+        <navbar class="nav">
+            <a href="#home" class="list-item active">Home</a>
+            <a href="#game" class="list-item">Game</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-gear"></i></button>
+                <div id="myDropdown" class="dropdown-content">
+                  <h3> Game Music: <button class="gamemusic">ON</button></h3>
+                  <h3>Click Sounds: <button class="clickmusic">ON</button></h3>
+                </div>
+              </div>
+            <a href="#contact" class="list-item">Contact</a>
+
+        </navbar>
+    </header>
+
+    <section class="home" id="home">
+        <div class="line1">
+            Welcome to the
+        </div>
+        <div class="mainline">
+            <span class="rotating">X</span> Tic Tac Toe <span class="rotating">O</span>
+        </div>
+        <div class="line3">
+            Game
+        </div>
+
+        <a href="#game" class="btn">Launch Game</a>
+    </section>
+
+    <section class="game" id="game">
+        <div class="MainCont">
+            <div class="gameCont">
+                <div class="gamesq bordtop bordleft"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordtop"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordtop bordright"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordleft"><span class="gamesqtext"></span></div>
+                <div class="gamesq"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordright"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordleft bordbot"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordbot"><span class="gamesqtext"></span></div>
+                <div class="gamesq bordbot bordright"><span class="gamesqtext"></span></div>
+            </div>
+            <div class="gameinfo">
+                <div class="scores">
+                    Score of Player 1 : <span class="Score1">0</span>
+                </div>
+                <div class="scores">
+                    Score of Player 2 : <span class="Score2">0</span>
+                </div>
+                <h2 class="info">Turn for Player 1</h2>
+                <div class="gamebut">
+                    <button class="btn btngrid">Reset Grid</button>
+                    <button class="btn btngame">Reset Game</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+                <input type="number" placeholder="Mobile Number">
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footertxt">
+            Dipanshu Mishra
+            <p> Copyright &copy | All Rights Reserved</p>
+        </div>
+        <div class="social">
+            <a href="https://www.instagram.com/_.dipanshu._06/" class="icon"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/dipanshu-mishra-696a0622a" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Dipanshu0612" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:dipanshu.a.mishra06@gmail.com" class="icon"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+        <div class="icontop">
+            <a href="#home"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/JavaScript/script.js"></script>
+</body>
+
+</html>
