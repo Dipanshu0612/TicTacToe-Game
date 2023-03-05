@@ -189,7 +189,9 @@ clickmusicbtn[0].addEventListener("click",()=>{
     }
 })
 
-
+function myfun(){
+    console.log("Thank you for your message.")
+}
 
 
 ScrollReveal({
