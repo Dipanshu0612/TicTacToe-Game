@@ -15,6 +15,7 @@ let winmusic=new Audio("win.mp3");
 let cmon=true;
 
 gamemusic.play();
+gamemusic.loop=true;
 
 const remcol=()=>{
     Array.from(boxsq).forEach(e=>{
