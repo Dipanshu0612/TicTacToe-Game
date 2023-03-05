@@ -138,6 +138,10 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
+function myfun(){
+    alert("Thank you for the message.")
+}
+
   window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
       var dropdowns = document.getElementsByClassName("dropdown-content");
