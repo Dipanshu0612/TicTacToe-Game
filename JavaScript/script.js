@@ -153,7 +153,7 @@ function myFunction() {
 
 let gamemusicbtn=document.getElementsByClassName('gamemusic');
 let clickmusicbtn=document.getElementsByClassName('clickmusic');
-let cnt1=0;
+let cnt1=1;
 let cnt2=0;
 
 gamemusicbtn[0].addEventListener("click",()=>{
