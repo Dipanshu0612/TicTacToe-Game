@@ -55,6 +55,9 @@ section{
     padding: 2rem;
     font-weight: 700;
 }
+.nav.active{
+    display: block;
+}
 
 .home{
     display: flex;
@@ -221,6 +224,9 @@ section{
     flex-wrap: wrap;
     background: var(--second-bg-color-bg-color);
 }
+.footertxt{
+    font-weight: 700;
+}
 .footer p{
     font-size: 0.8rem;
 }
@@ -329,4 +335,82 @@ section{
 
 .red{
     background: red;
+}
+
+
+@media screen and (max-width:1034px) {
+    .mainline{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+}
+@media screen and (max-width:1000px) {
+    .MainCont{
+        flex-wrap: wrap;
+    }
+    .gameinfo h2{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:700px) {
+    .footer{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footertxt{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    .social{
+        margin: 0;
+    }
+    .social a{
+        font-size: 1rem;
+    }
+    .icontop a{
+        font-size: 1rem;
+    }
+}
+
+.menubtn{
+    display: none;
+}
+@media screen and (max-width:800px) {
+    .menubtn{
+        display: inline-block;
+        font-size: 1.1rem;
+        background: var(--bg-color);
+        color: var(--main-color);
+        margin-right: 3rem;
+        padding: 0.5rem 0.5rem;
+    }
+    .nav{
+        display: none;
+    }
+    .nav{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        background: var(--bg-color);
+    }
+    .nav a{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .nav .dropdown{
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .dropdown-content{
+        position: relative;
+        width: 50%;
+        left: 25%;
+    }
 }

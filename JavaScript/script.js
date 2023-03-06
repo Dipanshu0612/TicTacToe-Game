@@ -194,6 +194,13 @@ function myfun(){
 }
 
 
+let menubtn=document.getElementsByClassName('menubtn');
+let nav=document.querySelector('.nav');
+
+menubtn[0].onclick = () =>{
+    nav.classList.toggle('active');
+}
+
 ScrollReveal({
     reset: true,
     distance: '80px',
